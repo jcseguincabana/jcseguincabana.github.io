@@ -1,2 +1,0 @@
-# jcscweb
-Jeececab online portfolio
