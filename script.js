@@ -9,5 +9,5 @@ function stroboscope() {
 		if (i === colors.length - 1) {
 			i = 0;
 		};
-	}, 1000);
+	}, 50);
 };
