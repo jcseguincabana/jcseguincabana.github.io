@@ -347,19 +347,27 @@ h1 {
 	color: green;
 }
 
+h2 {
+	font-size: 1.2em;
+}
+
 /*_____________________ LAYOUT______________________ */
 
 .container {
-	margin: 40px;
+	margin: 40px auto;
+	max-width: 80%;
 }
 
 #stroboscope {
-	background-color: yellow;
+	background-color: green;
+	padding: 20px;
 	width: 400px;
 	height: 200px;
+	text-align: center;
+	color: white;
 }
 
-/*_____________________ POINTERS______________________ */
+/*____________________ POINTERS______________________ */
 
 #stroboscope:hover {
 	cursor: pointer;
