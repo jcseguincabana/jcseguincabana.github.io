@@ -341,34 +341,29 @@ template {
 }
 /*# sourceMappingURL=bootstrap-reboot.css.map */
 
-/*_____________________  FONTS_____________________  */
+/*_____________________ LANDING PAGE______________________ */
 
-h1 {
-	color: green;
+#landing {
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+  background-image: url("dec-images/main-background.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h2 {
-	font-size: 1.2em;
+#landing h1 {
+  color: lightgrey;
+  background-color: rgba(211,211,211, 0.2);
+  border: 2px solid lightgrey;
+  font-size: 3rem;
+  padding: 10px 30px;
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
-/*_____________________ LAYOUT______________________ */
-
-.container {
-	margin: 40px auto;
-	max-width: 80%;
-}
-
-#stroboscope {
-	background-color: green;
-	padding: 20px;
-	width: 400px;
-	height: 200px;
-	text-align: center;
-	color: white;
-}
-
-/*____________________ POINTERS______________________ */
-
-#stroboscope:hover {
-	cursor: pointer;
-}
