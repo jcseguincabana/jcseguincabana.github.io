@@ -1,0 +1,24 @@
+
+.shapes-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 60vh;
+  background-color: pink;
+}
+
+.shape {
+  height: 100%;
+  width: 100%;
+}
+
+.shape-a {
+  background-color: $base;
+}
+
+.shape-b {
+  background-color: $accent;
+}
+
+.shape-c {
+  background-color: $gray;
+}
