@@ -1,5 +1,6 @@
 
 .shapes-wrapper {
+  margin: 40px auto;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 60vh;
@@ -11,17 +12,17 @@
 }
 
 .shape-a {
-  background-color: $base;
+  background-color: $dark;
 }
 
 .shape-b {
-  background-color: $accent;
-}
-
-.shape-c {
   background-color: $gray;
 }
 
+.shape-c {
+  background-color: $accent;
+}
+
 .shape-d {
-  background-color: $dark;
+  background-color: $base;
 }

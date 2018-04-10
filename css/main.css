@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 html {
-  font-family: Arial, sans-serif;
+  font-family: "Raleway";
   font-size: 16px; }
 
 body {
@@ -8,7 +9,17 @@ body {
   margin: 50px auto;
   width: 90%; }
 
+h1 {
+  color: #82BC31;
+  font-size: 1.8rem;
+  font-weight: 700; }
+
+h2 {
+  color: #253237;
+  font-weight: 400; }
+
 .shapes-wrapper {
+  margin: 40px auto;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 60vh; }
@@ -18,15 +29,15 @@ body {
   width: 100%; }
 
 .shape-a {
-  background-color: #82BC31; }
+  background-color: #253237; }
 
 .shape-b {
-  background-color: #404363; }
-
-.shape-c {
   background-color: #8D99AE; }
 
+.shape-c {
+  background-color: #404363; }
+
 .shape-d {
-  background-color: #253237; }
+  background-color: #82BC31; }
 
 /*# sourceMappingURL=main.css.map */
