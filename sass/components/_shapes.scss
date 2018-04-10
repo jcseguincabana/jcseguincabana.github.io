@@ -1,9 +1,8 @@
 
 .shapes-wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 60vh;
-  background-color: pink;
 }
 
 .shape {
@@ -21,4 +20,8 @@
 
 .shape-c {
   background-color: $gray;
+}
+
+.shape-d {
+  background-color: $dark;
 }

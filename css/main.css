@@ -10,21 +10,23 @@ body {
 
 .shapes-wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 60vh;
-  background-color: pink; }
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 60vh; }
 
 .shape {
   height: 100%;
   width: 100%; }
 
 .shape-a {
-  background-color: #348760; }
+  background-color: #82BC31; }
 
 .shape-b {
   background-color: #404363; }
 
 .shape-c {
   background-color: #8D99AE; }
+
+.shape-d {
+  background-color: #253237; }
 
 /*# sourceMappingURL=main.css.map */
