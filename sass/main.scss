@@ -3,14 +3,20 @@
 @import "abstracts/colors.scss";
 @import "abstracts/font-family.scss";
 
+// Vendor
+@import "vendor/normalize.scss";
 
 // Base styles
 @import "base/base.scss";
 @import "base/typography.scss";
 
 // Layout
-@import "layout/main-header.scss";
+@import "layout/header.scss";
+@import "layout/hero.scss";
+@import "layout/about.scss";
+@import "layout/skills.scss";
+@import "layout/footer.scss";
 
 
 // Components
-@import "components/shapes.scss";
+

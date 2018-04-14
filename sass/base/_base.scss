@@ -1,12 +1,24 @@
 
 html {
-  font-family: $font-stack;
-  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+  
 
 body {
   background-color: $light;
   color: $dark;
-  margin: 50px auto;
+  margin: 2rem auto;
   width: 90%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: $dark;
+  text-decoration: none;
 }
