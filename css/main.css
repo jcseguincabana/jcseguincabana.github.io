@@ -447,6 +447,12 @@ a {
 .main-header h1 {
   font-size: 2rem; }
 
+.skills-section h2 {
+  font-size: 1.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #7fa1c9; }
+
 .main-header {
   background: #202020;
   color: #d9dbdd;
@@ -464,7 +470,7 @@ a {
   font-size: 2rem;
   margin: 0 0 0 0.5em; }
   .logo-full span, .logo-small span {
-    color: #f59218;
+    color: #7fa1c9;
     font-weight: normal; }
 
 @media (min-width: 550px) {
@@ -511,15 +517,11 @@ a {
       .hero-section h2 {
         font-size: 2rem; } }
   .hero-section .arrow {
-    color: #f59218;
-    background-color: #d9dbdd;
+    color: white;
     padding: 0;
     line-height: 0;
     text-align: center;
     font-size: 3rem;
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
     position: absolute;
     bottom: 0.5em;
     right: 50%;
@@ -527,7 +529,7 @@ a {
     display: block; }
 
 .about-section {
-  background: linear-gradient(#255f86, #173a52);
+  background: linear-gradient(#253c86, #172552);
   box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
@@ -545,7 +547,7 @@ a {
 .skills-section {
   background-color: #F9F9F9;
   color: #202020;
-  padding: 4em 1em 6em 1em; }
+  padding: 4em 1em 6em 2em; }
 
 .skills-list {
   display: grid;
@@ -594,15 +596,15 @@ a {
       color: white; }
 
 .mail-btn {
-  border: 2px solid #f59218;
-  color: #f59218;
+  border: 2px solid #7fa1c9;
+  color: #7fa1c9;
   font-weight: bold;
   line-height: 1;
   margin-left: 1.2rem;
   padding: 0.6em;
   transition: ease 0.250s; }
   .mail-btn:hover, .mail-btn:active {
-    background-color: #db7d09;
+    background-color: #628cbd;
     color: #202020; }
   .mail-btn::before {
     display: none; }
