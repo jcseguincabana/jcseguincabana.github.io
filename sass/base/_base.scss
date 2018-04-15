@@ -9,13 +9,16 @@ html {
 body {
   background-color: $light;
   color: $dark;
-  margin: 2rem auto;
-  width: 90%;
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 a {

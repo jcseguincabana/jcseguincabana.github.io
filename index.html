@@ -6,61 +6,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="shortcut icon" href="images/logoJeececabFavi.png">
+  <link rel="shortcut icon" href="images/logoJeececabFavi.png">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="main-header">
-    <h1>Jeece<span>cab</span></h1>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Social</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section class="hero-section">
-    <h2>Hey there, I'm Jean-Christophe, <span>budding Front-end developer</span> located in Montreal</h2>
-  </section>
 
-  <section class="about-section">
-    <p>Jeececab is a "refactoring" of my way too long name: <span>J</span>ean-<span>C</span>hristophe Séguin <span>Cab</span>ana. I believe that life is an art form and I quickly become bored if I'm not challenging and reinventing myself. I'm interested in technologies, communication, music and rock climbing. I gave myself the challenge to become a self-taught front-end developer in less than a year. I started in October 2017 and so far, it's going great and I'm having a blast!</p> 
+  <header class="main-header">
+      <h1 class="logo-full">Jeece<span>cab</span></h1>
+      <h1 class="logo-small">J<span>c</span></h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#top"><i class="fas fa-home" aria-hidden="true"></i></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#social">Social</a></li>
+          <li><a href="mailto:jcseguincabana@gmail.com"><i class="fas fa-at" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <section id="top" class="hero-section parallax-bg">
+      <div class="hero-content">
+        <h2>Hey there, I'm Jean-Christophe,</h2> 
+        <h2>Front-end developer in process,</h2>
+        <h2>located in Montreal</h2>
+      </div>
+    </section>
+
+
+  <section id="about" class="about-section">
+    <p>Jeececab is a "refactoring" of my way too long name: <span>Je</span>an-<span>C</span>hristophe Séguin <span>Cab</span>ana. I believe in living life like an art form and I quickly become bored if I'm not challenging and reinventing myself. I'm interested in technologies, communication, music and rock climbing. I gave myself the challenge to become a self-taught front-end developer in less than a year. I started in October 2017 and so far, it's going great and I'm having a blast!</p> 
     
     <p>I studied electroacoustic music composition at University of Montreal from 2004 to 2008 and got a bachelor degree. I then studied in communications for three more years, but eventually started working as a freelance music composer, mostly for television. I did that from 2011 to 2017, but I felt the need to move on and got really into front-end programming, hence the decision to start studying it.</p>
   </section>
 
-  <section class="skills-section">
+  <section id="skills" class="skills-section">
     <h2>Skills set</h2>
     <ul class="skills-list">
-      <li>HTML5</li>
-      <li>CSS3 (SASS)</li>
-      <li>Javascript (ES6, jQuery)</li>
-      <li>React.js (Redux)</li>
-      <li>Responsive design</li>
-      <li>Tools (git, npm)</li>
+      <li><i class="fab fa-html5"></i> HTML5</li>
+      <li><i class="fab fa-css3-alt"></i> CSS3 (SASS)</li>
+      <li><i class="fab fa-js"></i> Javascript (ES6, jQuery)</li>
+      <li><i class="fab fa-react"></i> React.js (Redux)</li>
+      <li><i class="fas fa-mobile-alt"></i> Responsive design</li>
+      <li><i class="fas fa-wrench"></i> Tools (Git)</li>
     </ul>
   </section>
 
   <footer class="footer">
-    <div class="social-links">
-        <a href="https://github.com/jeececab/"><i class="fab fa-github" aria-hidden="true"></i></a>
-        <a href="https://codepen.io/jeececab/"><i class="fab fa-codepen" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/jeececab/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/jcsegcab"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    <div id="social" class="social-links">
+        <a href="https://github.com/jeececab/" title="Github"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://codepen.io/jeececab/" title="Codepen"><i class="fab fa-codepen" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/jeececab/" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/jcsegcab" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
     </div>
     <div class="contact">
       <h3>Interested in working with me?</h3>
-      <a href="mailto:jcseguincabana@gmail.com">Email me</a>
+      <a class="mail-btn" href="mailto:jcseguincabana@gmail.com">Email</a>
     </div>
   </footer>
  
-  
+
   <script src="scripts/script.js"></script>
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-
 </body>
 </html>

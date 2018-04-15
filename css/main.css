@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -410,22 +410,160 @@ html {
 
 body {
   background-color: #F9F9F9;
-  color: #191919;
-  margin: 2rem auto;
-  width: 90%; }
+  color: #202020;
+  margin: 0;
+  width: 100%;
+  min-width: 320px; }
 
 ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 a {
-  color: #191919;
+  color: #202020;
   text-decoration: none; }
 
 .main-header h1 {
   font-size: 2rem; }
 
+.main-header {
+  background: #202020;
+  color: #d9dbdd;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25); }
+  .main-header a {
+    color: #d9dbdd;
+    font-weight: bold;
+    margin: 0.5em;
+    transition: ease 0.250s; }
+    .main-header a:hover {
+      color: #F9F9F9;
+      border-bottom: 2px solid #F9F9F9; }
+  .main-header .logo-full, .main-header .logo-small {
+    font-size: 2rem;
+    margin: 0 0 0 0.5em; }
+    .main-header .logo-full span, .main-header .logo-small span {
+      font-weight: normal; }
+  @media (min-width: 550px) {
+    .main-header .logo-small {
+      display: none; } }
+  .main-header .logo-full {
+    display: none; }
+    @media (min-width: 550px) {
+      .main-header .logo-full {
+        display: block; } }
+  .main-header .main-nav {
+    font-size: 1rem;
+    margin: 0 0.8em; }
+    .main-header .main-nav ul {
+      display: flex; }
+
+.hero-section {
+  padding: 1em;
+  height: 100vh;
+  display: flex;
+  background-image: url("../images/bg-laptop-b.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero-section h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase; }
+    @media (max-width: 600px) {
+      .hero-section h2 {
+        font-size: 2rem; } }
+
+.about-section {
+  background: linear-gradient(#255f86, #173a52);
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+  color: #d9dbdd;
+  padding: 4em 1em;
+  text-align: center; }
+  .about-section p {
+    width: 100%;
+    margin: 1.2em auto;
+    max-width: 1200px; }
+  .about-section span {
+    color: #F9F9F9;
+    font-weight: bold; }
+
+.skills-section {
+  padding: 4em 1em 6em 1em; }
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  width: 90%; }
+  @media (max-width: 1034px) {
+    .skills-list {
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 706px) {
+    .skills-list {
+      grid-template-columns: 1fr; } }
+  .skills-list li {
+    font-size: 1.3rem;
+    padding: 0.7em; }
+
+.footer {
+  background: linear-gradient(#2d2d2d, #202020);
+  color: #d9dbdd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
+  padding: 0.8em; }
+  @media (max-width: 640px) {
+    .footer {
+      justify-content: center; } }
+  .footer a {
+    color: #d9dbdd; }
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin: 0 1em;
+  text-align: center; }
+
 .social-links {
   font-size: 2rem; }
+  .social-links a {
+    margin: 0 0.4em;
+    transition: ease 0.250s; }
+    .social-links a:hover {
+      color: white;
+      border-bottom: 2px solid white; }
+
+.mail-btn {
+  border: 2px solid #d9dbdd;
+  font-weight: bold;
+  line-height: 1;
+  margin-left: 1.2rem;
+  padding: 0.6em;
+  transition: ease 0.250s; }
+  .mail-btn:hover, .mail-btn:active {
+    background-color: #bec2c5;
+    color: #202020; }
 
 /*# sourceMappingURL=main.css.map */

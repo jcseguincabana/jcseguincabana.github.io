@@ -1,0 +1,25 @@
+.hero-section {
+  padding: 1em;
+  height: 100vh;
+  display: flex;
+  background-image: url("../images/bg-laptop-b.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
+  }
+}
+
