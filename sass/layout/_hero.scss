@@ -1,5 +1,4 @@
 .hero-section {
-  padding: 1em;
   height: 100vh;
   display: flex;
   background-image: url("../images/bg-laptop-b.jpg");
@@ -21,5 +20,13 @@
       font-size: 2rem;
     }
   }
+  .arrow {
+    color: $base;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0.5em;
+    right: 50%;
+    transform: translateX(50%);
+    display: block;
+  }
 }
-
