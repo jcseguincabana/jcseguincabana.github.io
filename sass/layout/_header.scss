@@ -11,39 +11,42 @@
   box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.25);
   -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.25);
   -moz-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.25);
+  }
+
+.logo-full, .logo-small {
+  font-size: 2rem;
+  margin: 0 0 0 0.5em;
+  span {
+    color: $base;
+    font-weight: normal;
+  }
+}
+
+.logo-small {
+  @media (min-width: 550px) {
+    display: none;
+  }
+}
+
+.logo-full {
+  display: none;
+  @media (min-width: 550px) {
+    display: block;
+  }
+}
+
+.main-nav {
+  font-size: 1rem;
+  margin: 0 0.8em;
+  ul {
+    display: flex;
+  }
   a {
     color: $gray;
     font-weight: bold;
     margin: 0.5em;
-    transition: ease 0.250s;
     &:hover {
-      color: $light;
-      border-bottom: 2px solid $light;
+      color: white;
     }
-  }
-  .logo-full, .logo-small {
-    font-size: 2rem;
-    margin: 0 0 0 0.5em;
-    span {
-      font-weight: normal;
-    }
-  }
-  .logo-small {
-    @media (min-width: 550px) {
-      display: none;
-    }
-  }
-  .logo-full {
-    display: none;
-    @media (min-width: 550px) {
-      display: block;
-    }
-  }
-  .main-nav {
-    font-size: 1rem;
-    margin: 0 0.8em;
-    ul {
-      display: flex;
-    }
-  }
+}
 }

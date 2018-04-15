@@ -409,8 +409,7 @@ html {
   padding: 0; }
 
 body {
-  background-color: #F9F9F9;
-  color: #202020;
+  background-color: #202020;
   margin: 0;
   width: 100%;
   min-width: 320px; }
@@ -421,8 +420,28 @@ ul {
   margin: 0; }
 
 a {
-  color: #202020;
+  transition: ease 0.250s;
+  position: relative;
   text-decoration: none; }
+  a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 1.3em;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.250s ease-in-out 0s;
+    transition: all 0.250s ease-in-out 0s; }
+  a:hover::before {
+    content: "";
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
 
 .main-header h1 {
   font-size: 2rem; }
@@ -439,32 +458,35 @@ a {
   box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25); }
-  .main-header a {
+
+.logo-full, .logo-small {
+  font-size: 2rem;
+  margin: 0 0 0 0.5em; }
+  .logo-full span, .logo-small span {
+    color: #00a217;
+    font-weight: normal; }
+
+@media (min-width: 550px) {
+  .logo-small {
+    display: none; } }
+
+.logo-full {
+  display: none; }
+  @media (min-width: 550px) {
+    .logo-full {
+      display: block; } }
+
+.main-nav {
+  font-size: 1rem;
+  margin: 0 0.8em; }
+  .main-nav ul {
+    display: flex; }
+  .main-nav a {
     color: #d9dbdd;
     font-weight: bold;
-    margin: 0.5em;
-    transition: ease 0.250s; }
-    .main-header a:hover {
-      color: #F9F9F9;
-      border-bottom: 2px solid #F9F9F9; }
-  .main-header .logo-full, .main-header .logo-small {
-    font-size: 2rem;
-    margin: 0 0 0 0.5em; }
-    .main-header .logo-full span, .main-header .logo-small span {
-      font-weight: normal; }
-  @media (min-width: 550px) {
-    .main-header .logo-small {
-      display: none; } }
-  .main-header .logo-full {
-    display: none; }
-    @media (min-width: 550px) {
-      .main-header .logo-full {
-        display: block; } }
-  .main-header .main-nav {
-    font-size: 1rem;
-    margin: 0 0.8em; }
-    .main-header .main-nav ul {
-      display: flex; }
+    margin: 0.5em; }
+    .main-nav a:hover {
+      color: white; }
 
 .hero-section {
   padding: 1em;
@@ -506,6 +528,8 @@ a {
     font-weight: bold; }
 
 .skills-section {
+  background-color: #F9F9F9;
+  color: #202020;
   padding: 4em 1em 6em 1em; }
 
 .skills-list {
@@ -537,8 +561,6 @@ a {
   @media (max-width: 640px) {
     .footer {
       justify-content: center; } }
-  .footer a {
-    color: #d9dbdd; }
 
 .contact {
   display: flex;
@@ -548,22 +570,28 @@ a {
 
 .social-links {
   font-size: 2rem; }
+  .social-links ul {
+    display: flex; }
   .social-links a {
     margin: 0 0.4em;
-    transition: ease 0.250s; }
+    color: #d9dbdd; }
     .social-links a:hover {
-      color: white;
-      border-bottom: 2px solid white; }
+      color: white; }
 
 .mail-btn {
-  border: 2px solid #d9dbdd;
+  border: 2px solid #00a217;
+  color: #00a217;
   font-weight: bold;
   line-height: 1;
   margin-left: 1.2rem;
   padding: 0.6em;
   transition: ease 0.250s; }
   .mail-btn:hover, .mail-btn:active {
-    background-color: #bec2c5;
+    background-color: #007911;
     color: #202020; }
+  .mail-btn::before {
+    display: none; }
+  .mail-btn:hover::before {
+    display: none; }
 
 /*# sourceMappingURL=main.css.map */
