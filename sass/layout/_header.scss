@@ -1,7 +1,6 @@
 
 .main-header {
   background: $dark;
-  color: $gray;
   width: 100%;
   position: fixed;
   top: 0;
@@ -14,7 +13,9 @@
   }
 
 .logo-full, .logo-small {
+  color: $gray;
   font-size: 2rem;
+  font-weight: 700;
   margin: 0 0 0 0.5em;
   span {
     color: $base;

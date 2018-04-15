@@ -455,7 +455,6 @@ a {
 
 .main-header {
   background: #202020;
-  color: #d9dbdd;
   width: 100%;
   position: fixed;
   top: 0;
@@ -467,7 +466,9 @@ a {
   -moz-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25); }
 
 .logo-full, .logo-small {
+  color: #d9dbdd;
   font-size: 2rem;
+  font-weight: 700;
   margin: 0 0 0 0.5em; }
   .logo-full span, .logo-small span {
     color: #7fa1c9;
@@ -512,7 +513,8 @@ a {
     line-height: 1.2;
     letter-spacing: 0.2em;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 1em; }
     @media (max-width: 600px) {
       .hero-section h2 {
         font-size: 2rem; } }
@@ -567,19 +569,22 @@ a {
 .footer {
   background: linear-gradient(#2d2d2d, #202020);
   color: #d9dbdd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.25);
   padding: 0.8em; }
-  @media (max-width: 640px) {
-    .footer {
-      justify-content: center; } }
 
 .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em; }
+  @media (max-width: 640px) {
+    .contact {
+      justify-content: center; } }
+
+.email-contact {
   display: flex;
   align-items: center;
   margin: 0 1em;
@@ -594,6 +599,21 @@ a {
     color: #d9dbdd; }
     .social-links a:hover {
       color: white; }
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .copyright::before {
+    content: "";
+    background-color: #323538;
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 80%; }
+  .copyright p {
+    margin: 1em 0 0 0; }
 
 .mail-btn {
   border: 2px solid #7fa1c9;

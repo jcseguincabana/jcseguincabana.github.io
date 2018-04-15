@@ -1,20 +1,24 @@
 .footer {
   background: linear-gradient(lighten($dark, 5%), $dark);
   color: $gray;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.25);
   -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.25);
   -moz-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.25);
-  @media (max-width: 640px) {
-    justify-content: center;
-  }
   padding: 0.8em;
 }
 
 .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+  @media (max-width: 640px) {
+    justify-content: center;
+  }
+}
+
+.email-contact {
   display: flex;
   align-items: center;
   margin: 0 1em;
@@ -32,6 +36,25 @@
     &:hover {
       color: white;
     }
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: darken($gray, 65%);
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 80%;
+ 
+  }
+  p {
+    margin: 1em 0 0 0;
   }
 }
 
